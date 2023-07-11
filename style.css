@@ -237,6 +237,24 @@ header > img {
   border-radius: 8px;
   flex: 1;
 }
+/* ___________review__________ */
+.review-container{
+  background: linear-gradient(45deg, rgba(214, 0, 0, 0.719), rgba(0, 0, 207, 0.671)), url(./images/thoughts.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  margin-top: 128px;
+  width: 78%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 0;
+  border-radius: 8px;
+}
+.review-container h3{
+  font-size: 30px;
+  font-weight: 400;
+}
 
 /* ________subscribe box________ */
 
@@ -290,7 +308,7 @@ header > img {
   margin-top: 50px;
 }
 .subscribe-container form .btn-primary {
-  margin: 0;
+  margin-top: 50px;
 }
 
 /* _______Footer______________ */
