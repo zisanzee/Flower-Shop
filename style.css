@@ -4,7 +4,11 @@
   font-family: "Lato", sans-serif;
 }
 header {
-  background: linear-gradient(45deg,rgba(255, 0, 0, 0.322), rgba(0, 0, 255, 0.329));
+  background: linear-gradient(
+    45deg,
+    rgba(255, 0, 0, 0.322),
+    rgba(0, 0, 255, 0.329)
+  );
 
   display: flex;
   justify-content: space-around;
@@ -44,6 +48,8 @@ header > img {
 
 /* ________main_________ */
 
+/* section 1 */
+
 /* ________flower cards_________ */
 
 .sec1 {
@@ -51,7 +57,6 @@ header > img {
   flex-direction: column;
   align-items: center;
   margin: 150px 0;
-
 }
 .sec1 .title {
   text-align: center;
@@ -63,9 +68,11 @@ header > img {
 }
 .sec1 .title p {
   color: rgba(39, 39, 39, 0.6);
+  max-width: 590px;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
+  margin-top: 25px;
 }
 .flower-tree-container {
   display: flex;
@@ -94,14 +101,26 @@ header > img {
   align-self: center;
 }
 .color1 {
-  background: linear-gradient(45deg, rgba(255, 217, 0, 0.466), rgba(81, 81, 253, 0.445));
+  background: linear-gradient(
+    45deg,
+    rgba(255, 217, 0, 0.466),
+    rgba(81, 81, 253, 0.445)
+  );
 }
 .color2 {
-  background: linear-gradient(45deg, rgba(255, 0, 0, 0.459), rgba(73, 73, 250, 0.432));
+  background: linear-gradient(
+    45deg,
+    rgba(255, 0, 0, 0.459),
+    rgba(73, 73, 250, 0.432)
+  );
 }
 
 .color3 {
-  background: linear-gradient(45deg, rgb(240, 163, 255), rgba(56, 56, 255, 0.438));
+  background: linear-gradient(
+    45deg,
+    rgb(240, 163, 255),
+    rgba(56, 56, 255, 0.438)
+  );
 }
 .flower-tree h3 {
   color: #272727;
@@ -112,19 +131,180 @@ header > img {
   text-decoration-line: underline;
 }
 /* _______support card_______ */
-.support-card-container{
+.support-card-container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 78%;
   padding: 65px 0;
-  background: linear-gradient(45deg,#ee5879b7, #bb2c4bab);
+  background: linear-gradient(45deg, #ee5879b7, #bb2c4bab);
   border-radius: 8px;
   margin-top: 120px;
 }
-.support-card{
+.support-card {
   text-align: center;
 }
-.support-card p{
+.support-card p {
   margin: 25px 0;
+}
+
+/* ___________section 2___________ */
+
+.sec2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* __________hot deal box_____________ */
+.sale-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(
+    45deg,
+    rgba(116, 247, 225, 0.521),
+    rgba(253, 255, 218, 0.712)
+  );
+  width: 78%;
+}
+.sale-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+}
+.sale-info h3 {
+  color: #272727;
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+}
+.color-red {
+  color: #eb0033;
+}
+.sale-info p {
+  color: rgba(39, 39, 39, 0.6);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+/* _______instagram______ */
+
+.insta-title {
+  text-align: center;
+  margin-top: 128px;
+}
+.insta-title h3 {
+  font-size: 40px;
+  font-weight: 800;
+}
+.insta-title p {
+  color: rgba(39, 39, 39, 0.6);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  max-width: 590px;
+  margin: auto;
+  margin-top: 24px;
+}
+.insta-pics {
+  display: flex;
+  justify-content: space-between;
+  width: 78%;
+  margin-top: 24px;
+}
+.insta-pics img {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
+}
+
+/* ________subscribe box________ */
+
+.subscribe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 78%;
+  background: linear-gradient(
+      to left,
+      rgba(238, 255, 0, 0.363),
+      rgba(255, 0, 242, 0.5)
+    ),
+    url("./images/Rectangle\ 9.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 128px;
+  padding: 120px 0;
+  border-radius: 8px;
+  margin-bottom: 128px;
+}
+.subscribe-container h3 {
+  color: #272727;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+}
+.subscribe-container p {
+  color: rgba(39, 39, 39, 0.6);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 15px;
+}
+.subscribe-container form {
+  display: flex;
+  gap: 15px;
+  width: 60%;
+  justify-content: space-between;
+  align-items: center;
+}
+#email-input {
+  width: 77%;
+  padding: 23px 0 23px 23px;
+  border: none;
+  border-radius: 7px;
+  color: rgba(39, 39, 39, 0.6);
+  font-size: 20px;
+  font-weight: 400;
+}
+.subscribe-container form .btn-primary {
+  margin: 0;
+}
+
+/* _______Footer______________ */
+
+footer {
+  background: rgb(31, 30, 30);
+  background-size: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 128px 0;
+}
+footer h3 {
+  color: white;
+  font-size: 48px;
+  font-weight: 800;
+}
+footer p {
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  width: 620px;
+  margin-top: 24px;
+}
+footer h4 {
+  color: rgba(255, 255, 255, 0.4);
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 30px;
 }
